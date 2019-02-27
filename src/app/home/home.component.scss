@@ -1,0 +1,69 @@
+.hero {
+  width: 100%;
+  height: 700px;
+  background-color: #f5f5f5;
+
+  .hero-bg {
+    background-image: url("../../assets/hero.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.16);
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    padding-top: 260px;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: #424242;
+    font-family: "Ubuntu";
+  }
+
+  h3 {
+    color: #666;
+    font-family: "Ubuntu";
+  }
+
+  .action {
+    margin-top: 24px;
+  }
+
+  button {
+    margin-right: 36px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background-color: #448aff;
+    border: 2px solid #448aff;
+    font-weight: 700;
+    padding: 8px 24px;
+    line-height: 28px;
+    border-radius: 5px;
+    font-family: "Ubuntu";
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: #3a6fca;
+      border-color: #3a6fca;
+    }
+  }
+
+  .btn-light {
+    color: #424242;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+
+    &:hover {
+      background-color: #eee;
+      border-color: #eee;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "ng-universal-demo",
+  "name": "fkop",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
@@ -19,8 +19,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "lint": "ng lint ng-universal-demo",
-    "build:client-and-server-bundles": "ng build --prod && ng run ng-universal-demo:server:production",
+    "lint": "ng lint fkop",
+    "build:client-and-server-bundles": "ng build --prod && ng run fkop:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "compile:server": "tsc -p server.tsconfig.json",
@@ -41,9 +41,11 @@
     "@angular/platform-browser-dynamic": "7.1.4",
     "@angular/platform-server": "7.1.4",
     "@angular/router": "7.1.4",
+    "@ng-bootstrap/ng-bootstrap": "^4.0.4",
     "@nguniversal/common": "^6.0.0",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "reflect-metadata": "^0.1.10",
@@ -51,9 +53,9 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.11.4",
+    "@angular-devkit/build-angular": "^0.13.3",
     "@angular/cli": "7.1.4",
-    "@angular/compiler-cli": "7.1.4",
+    "@angular/compiler-cli": "^7.2.6",
     "@angular/language-service": "7.1.4",
     "@types/node": "^8.0.30",
     "codelyzer": "^4.0.2",
